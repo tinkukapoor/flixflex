@@ -1,0 +1,53 @@
+{% load static %}
+{% get_static_prefix as STATIC %}
+
+<html>
+<head>
+
+	<title>aboutus</title>
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+
+	<link rel="stylesheet" href="{{STATIC}}css/bootstrap-theme.css" media="screen" >
+	<link rel="stylesheet" href="{{STATIC}}css/main.css">
+	<link rel="stylesheet" href="{{STATIC}}css/js-image-slider.css">
+
+
+
+</head>
+
+
+<body>
+	<div>
+          
+          
+          
+	<p>Our software company provides reliable services to our customer.We believe in technology can change the world to any heights it wants. Our company provides services in development,Android development,SEO,Telecommunication sector etc.Our company provides services in providing solutions in analytics domain.We are having our customer from all world and enjoying our services.We provide solutions for website development also.We believe in providing excellent services to our customer in terms Testing,gaming software etc.</p>
+	</div>
+	
+
+
+<script type="text/javascript">
+        //The following script is for the group 2 navigation buttons.
+        function switchAutoAdvance() {
+            imageSlider.switchAuto();
+            switchPlayPauseClass();
+        }
+        function switchPlayPauseClass() {
+            var auto = document.getElementById('auto');
+            var isAutoPlay = imageSlider.getAuto();
+            auto.className = isAutoPlay ? "group2-Pause" : "group2-Play";
+            auto.title = isAutoPlay ? "Pause" : "Play";
+        }
+        switchPlayPauseClass();
+    </script>
+
+
+	<script src="{{STATIC}}js/template.js"></script>
+	<script src="{{STATIC}}js/js-image-slider.js"></script>
+
+</body>
+
+

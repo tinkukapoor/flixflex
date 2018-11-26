@@ -1,0 +1,148 @@
+{% load static %}
+{% get_static_prefix as STATIC %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% include "header.html" %}
+
+<body class="home" style="margin-top: 6%; background-color: white;">
+
+
+	<div class="container" id="home">
+
+		
+		<div class="row">
+			
+			<!-- Article main content -->
+			<article class="col-md-12 maincontent">
+				
+
+
+ 					<div id="sliderFrame" style="background-color: gray">
+			        <div id="slider">
+					<img src="{{STATIC}}images/index13.jpg" />
+					</div>
+					<div id="column1">
+						<img src="{{STATIC}}images/index15.jpeg" />
+						<img src="{{STATIC}}images/index34.jpeg" />
+						<img src="{{STATIC}}images/index10.jpeg" />
+						<img src="{{STATIC}}images/images37.jpeg" />
+						
+					</div>
+					<div id="column2">
+						<img src="{{STATIC}}images/index24.jpeg" />
+						<img src="{{STATIC}}images/images49.jpeg" />
+						<img src="{{STATIC}}images/index9.jpeg" />
+						
+					</div>
+					<div id="column3">
+						<img src="{{STATIC}}images/images99.jpeg" />
+			        	<img src="{{STATIC}}images/index22.jpeg" />
+			        	
+			        </div>
+			        
+
+			</article>
+		</div>	
+	</div>
+
+
+		<div class=" container" id="aboutus">
+
+		
+		<div class="row">
+			
+			<!-- Article main content -->
+			<article class="col-md-12 maincontent">
+				<header class="page-header">
+				
+				
+				<p>Our software company provides reliable services to our customer.We believe in technology can change the world to any heights it wants. Our company provides services in development,Android development,SEO,Telecommunication sector etc.Our company provides services in providing solutions in analytics domain.We are having our customer from all world and enjoying our services.We provide solutions for website development also.We believe in providing excellent services to our customer in terms Testing,gaming software etc.
+					 </p>
+				
+				<h4>Our Vision</h4>
+				<p>Our vision is simply to be the best software industry and company by using Technology, experience, expertise, and business sense to enhance our clients' growth satisfaction & profits in a sustainable way.</p>
+
+				
+			</article>
+			
+
+		</div>
+	</div>
+
+
+		<div class="container" id="productservices">
+
+		
+		<div class="row">
+			
+			<!-- Article main content -->
+			<article class="col-md-12 maincontent">
+				<header class="page-header">
+				<h3>Product & Services</h3>
+				<h4>Our service vendors </h4>
+				<p>We provide IT services to our clients from US and UK and even india.We have provide a great impact in these region by services and satisfaction to our customer.</p>
+				
+				<h4>Price Indicator</h4>
+				<p>We provides one of best services in chandigarh and around delhi/NCR for software development.Our customer are recognised and great IT giants which known through the world. We are providing services to companies like amazon,deloite,infoys,reliance,wipro etc.We have very powerful team of software and management for providing the services to our customer.</p>
+
+
+				
+			</article>	
+
+		</div>
+	</div>
+
+
+
+	<div class="container" id="contactus">
+				
+				<div class="row">
+					<h4>Address</h4>
+					<h4>Corporate Office</h4>
+					<address>
+						Flixflex pythonanywhere software pvt ltd
+						E-238 Mohali phase2 chandigarh
+					</address>
+					<h5>Phone:9459760098</h5>
+					<address>
+						
+					</address>
+				
+				</div>
+
+	</div>	
+
+	<script type="text/javascript">
+        //The following script is for the group 2 navigation buttons.
+        function switchAutoAdvance() {
+            imageSlider.switchAuto();
+            switchPlayPauseClass();
+        }
+        function switchPlayPauseClass() {
+            var auto = document.getElementById('auto');
+            var isAutoPlay = imageSlider.getAuto();
+            auto.className = isAutoPlay ? "group2-Pause" : "group2-Play";
+            auto.title = isAutoPlay ? "Pause" : "Play";
+        }
+        switchPlayPauseClass();
+    </script>
+
+
+	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src="{{STATIC}}js/headroom.min.js"></script>
+	<script src="{{STATIC}}js/jQuery.headroom.min.js"></script>
+	<script src="{{STATIC}}js/template.js"></script>
+	<script src="{{STATIC}}js/js-image-slider.js"></script>
+	
+
+	<!-- Google Maps -->
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=&amp;sensor=false&amp;extension=.js"></script> 
+	<script src="{{STATIC}}js/google-map.js"></script> -->
+
+{% include "footer.html"%}
+</body>
+</html>

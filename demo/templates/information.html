@@ -1,0 +1,53 @@
+{% load static %}
+{% get_static_prefix as STATIC %}
+
+<html>
+<head>
+
+	<title>information</title>
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+
+	<link rel="stylesheet" href="{{STATIC}}css/bootstrap-theme.css" media="screen" >
+	<link rel="stylesheet" href="{{STATIC}}css/main.css">
+	<link rel="stylesheet" href="{{STATIC}}css/js-image-slider.css">
+
+
+
+</head>
+
+
+<body>
+	<div class="column"> 
+        
+    <p>Our vision is simply to be the best software industry and company by using Technology, experience, expertise, and business sense to enhance our clients' growth satisfaction & profits in a sustainable way.We are the team of 80 employees working for the improvement of the product and services for our client.</p>	
+	</div>
+	<div>
+        
+    </div>
+
+
+<script type="text/javascript">
+        //The following script is for the group 2 navigation buttons.
+        function switchAutoAdvance() {
+            imageSlider.switchAuto();
+            switchPlayPauseClass();
+        }
+        function switchPlayPauseClass() {
+            var auto = document.getElementById('auto');
+            var isAutoPlay = imageSlider.getAuto();
+            auto.className = isAutoPlay ? "group2-Pause" : "group2-Play";
+            auto.title = isAutoPlay ? "Pause" : "Play";
+        }
+        switchPlayPauseClass();
+    </script>
+
+
+	<script src="{{STATIC}}js/template.js"></script>
+	<script src="{{STATIC}}js/js-image-slider.js"></script>
+
+</body>
+
+
